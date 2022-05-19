@@ -3,7 +3,7 @@ package guru.qa;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.*;
 
-public class SimpleTest {
+public class JUnitTests {
     @BeforeEach
     void openYa() {
         Selenide.open("https://ya.ru");
