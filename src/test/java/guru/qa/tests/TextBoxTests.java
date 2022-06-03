@@ -38,11 +38,18 @@ String year = "1989";
         open("/automation-practice-form");
         $("#firstName").setValue("Vasily");
         $("#lastName").setValue("Ivanov");
-        $("#userEmail").setValue("vassyaivanoff");
+        $("#userEmail").setValue("vassyaivanoff@test.com");
         $("#genterWrapper").$(byText("Male")).click();
         $("#userNumber-wrapper").$("#userNumber").setValue("8889999389");
         $("#dateOfBirthInput").click();calendar.setDate(day,month,year);
-        $("#userNumber").setValue("8999994949494");
-
+        $("#subjectsInput").setValue("Maths").pressEnter();
+        $("#hobbiesWrapper").$(byText("Reading")).click();
+        $("#uploadPicture").uploadFromClasspath("img/1.png");
+        $("#currentAddress").setValue("Same Sheet");
+        $("#state").click();
+        $("#stateCity-wrapper").$(byText("NCR")).click();
+        $("#city").click();
+        $("#stateCity-wrapper").$(byText("Delhi")).click();
+        $("#submit").click();
     }
 }
