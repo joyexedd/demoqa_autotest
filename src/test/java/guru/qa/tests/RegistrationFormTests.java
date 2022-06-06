@@ -4,13 +4,16 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import pages.components.calendarComponents;
-
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
 public class RegistrationFormTests {
+
+    Faker faker = new Faker();
+
     calendarComponents calendar = new calendarComponents();
+
 String day = "01";
 String month = "July";
 String year = "1989";
