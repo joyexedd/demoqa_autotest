@@ -36,6 +36,7 @@ String year = "1989";
     @Test
     void registrationFormTest(){
         open("/automation-practice-form");
+
         $("#firstName").setValue("Vasily");
         $("#lastName").setValue("Ivanov");
         $("#userEmail").setValue("vassyaivanoff@test.com");
@@ -51,5 +52,6 @@ String year = "1989";
         $("#city").click();
         $("#stateCity-wrapper").$(byText("Delhi")).click();
         $("#submit").click();
+
     }
 }
